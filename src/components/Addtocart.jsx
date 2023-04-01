@@ -53,10 +53,10 @@ const clearCart = () => {
               return <Cart key={item.id} item={item} increaseTotalAmount={increaseTotalAmount} decreaseTotalAmount={decreaseTotalAmount} mainTotal={mainTotal} setMainTotal={setMainTotal}/>;
             })}
           </div>
-          <hr className=" border-gray-500 border-2 my-5 w-[80%] mx-auto" />
-          <div className="w-[60%] flex flex-wrap justify-between items-center mx-auto">
-            <p className="text-2xl text-gray-500">Total Amount</p>
-            <p className="text-2xl text-gray-600 font-semibold">${mainTotal.toFixed(2)}</p>
+          <hr className=" border-gray-500 border-2 my-5 w-[80%] mx-auto max-[600px]:w-[93%]" />
+          <div className="w-[60%] max-[600px]:w-[80%] flex flex-wrap justify-between items-center mx-auto">
+            <p className="text-2xl text-gray-500 max-[600px]:text-xl">Total Amount</p>
+            <p className="text-2xl text-gray-600 font-semibold max-[600px]:text-xl">${mainTotal.toFixed(2)}</p>
           </div>
           <div className="flex justify-center items-center mt-10">
             <button onClick={clearCart} className="px-6 py-2 bg-teal-500 text-white rounded shadow hover:bg-teal-600">

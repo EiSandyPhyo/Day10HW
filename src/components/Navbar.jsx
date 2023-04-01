@@ -9,7 +9,7 @@ const Navbar = () => {
   
   // console.log(search)
   return (
-    <div className='flex flex-wrap justify-around items-center p-5 rounded shadow-lg'>
+    <div className='flex flex-wrap justify-around items-center p-5 rounded shadow-lg sticky top-0 bg-white'>
       <Link to={'/'}>
       <h1 className='text-3xl font-semibold'>Shop</h1>
       </Link>
